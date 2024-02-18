@@ -1,4 +1,4 @@
-# Astro Starter Kit: Template para projectos futuros
+# Astro Starter Kit: Template for future projects
 
 ## 🚀 Project Structure
 
