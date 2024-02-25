@@ -3,8 +3,24 @@ import BentoItem from './BentoItem.astro'
 ---
 
 <section class="w-full max-w-[1400px] grid grid-cols-10 auto-rows-[25rem] gap-4 mx-auto p-20">
-    <BentoItem class="col-span-10 md:col-span-4" title="El Arte del Café: Más Allá de la Taza"/>
-    <BentoItem class="col-span-10 md:col-span-6" title="Café y Sostenibilidad: Un Maridaje Necesario" subtitle="Explorando cafetales sostenibles alrededor del mundo: De la plantación a la conciencia."/>
-    <BentoItem class="col-span-10 md:col-span-6" title="Café y Salud: Desentrañando los Beneficios y Mitos" subtitle="¿Realidad o ficción?"/>
-    <BentoItem class="col-span-10 md:col-span-4" title="La Cultura del Café en el Siglo XXI: Tendencias y Tradiciones"/>
+    <BentoItem class="col-span-10 md:col-span-4" title="El Arte del Café: Más Allá de la Taza">
+
+        <div slot="image" class="absolute left-0 top-0 bottom-0 w-full h-full rounded-md group-hover:scale-110 transition-scale duration-1000 ease-in-out opasity-90 bg-blend-luminosity bg-center bg-cover bg-no-repeat -z-10"
+        style="background-image: url('/bento/arts-coffee.jpg')"
+        >
+        </div>
+        <p slot="content" class="max-w-xl">
+            Desde las raíces de la plantación hasta la fragancia que llena tu taza, exploraremos juntos el <strong>arte del café más allá de la simple bebida.</strong> Sumérgete con nosotros en esta experiencia única, donde cada artículo es una invitación a descubrir la magia detrás de cada grano.
+        </p>
+    </BentoItem>
+
+    <BentoItem class="col-span-10 md:col-span-6" title="Café y Sostenibilidad: Un Maridaje Necesario" subtitle="Explorando cafetales sostenibles alrededor del mundo: De la plantación a la conciencia.">
+    </BentoItem>
+
+    <BentoItem class="col-span-10 md:col-span-6" title="Café y Salud: Desentrañando los Beneficios y Mitos" subtitle="¿Realidad o ficción?">
+    </BentoItem>
+
+    <BentoItem class="col-span-10 md:col-span-4" title="La Cultura del Café en el Siglo XXI: Tendencias y Tradiciones">
+    </BentoItem>
+
 </section> 
