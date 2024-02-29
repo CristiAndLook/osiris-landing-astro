@@ -1,13 +1,20 @@
+---
+import { getI18n } from '../i18n/index';
+
+const {currentLocale = 'es'} = Astro;
+const i18n = getI18n({currentLocale}); 
+---
+
 <section class="text-xl text-left max-w-[60ch] text-pretty mx-auto my-24">
+  <img class="w-32 m-auto" src="/logo.svg" alt="Logo de coffee land" />
 
-    <img class="w-32 m-auto" src="/logo.svg" alt="Logo de coffee land">
+  <h1
+    class="test-4xl font-semibold text-center text-wrap mx-auto mt-10 mb-10 tracking-wide"
+  >
+   {i18n.INTRO_TITLE}<br />{i18n.INTRO_TITLE_AFTER_BR}
+  </h1>
 
-    <h1 class="test-4xl font-semibold text-center text-wrap mx-auto mt-10 mb-10 tracking-wide">Bienvenidos/as <br /> a nuestro blog de café </h1>
-    
-    <p>Exploraremos juntos el fascinante <strong>mundo del café</strong>, donde cada taza cuenta una historia única.</p>
-
-    <p>Nuestro blog está diseñado para aquellos que buscan más que una simple bebida caliente: <strong>buscamos descubrir la esencia misma de esta infusión</strong></p>
-    
-    <p>Exploraremos juntos las diversas técnicas de preparación que dan vida a sus distintos perfiles de sabor. <strong>¡ACOMPAÑANOS Y DESCUBRAMOS JUNTOS ESTE MARAVILLOSO MUNDO!</strong></p>
-
+  <p set:html={i18n.INTRO_TEXT_1}></p>
+  <p set:html={i18n.INTRO_TEXT_2}></p>
+  <p set:html={i18n.INTRO_TEXT_3}></p>
 </section>
